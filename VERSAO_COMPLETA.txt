@@ -1,0 +1,79 @@
+VERSIÓN COMPLETA PARA SUBIR NO GITHUB
+
+## ARQUIVOS QUE VOCE PRECISA TER
+
+### Pasta raiz
+- index.html (já criado – é a página principal do site)
+
+### Pasta assets (nesta pasta você coloca seus arquivos)
+Crie a pasta `assets/` e coloque:
+1. Seu vídeo de transição: transicao-solar.mp4
+2. Sua imagem de poster: poster-solar.jpg
+
+### Opcional
+Vocês pode colocar fotos reais do prédio na pasta assets também:
+- fachada.jpg
+- sala1.jpg
+- entrada.jpg
+- etc.
+
+## COMO ORGANIZAR OS ARQUIVOS
+
+solar-museum-site/
+├── index.html
+├── README.md
+├── CHECKLIST.txt
+├── assets/
+│   ├── transicao-solar.mp4   (SEU VÍDEO)
+│   └── poster-solar.jpg      (SUA IMAGEM)
+└── [fotos opcionais]
+
+## COMO ABRIR O SITE NO COMPUTADOR
+
+1. Dê duplo clique no arquivo index.html
+2. Ele vai abrir no navegador
+3. Veja se o site está funcionando com suas imagens
+
+## COMO SUBIR NO GITHUB
+
+### Criar repositório
+1. Acesse github.com
+2. Clique em New repository
+3. Nome: solar-museum (qualquer nome serve)
+4. Marque Public
+5. Create repository
+
+### Subir os arquivos
+1. Clique em Add files > Upload files
+2. Arraste para cá:
+   - index.html
+   - assets/transicao-solar.mp4
+   - assets/poster-solar.jpg
+3. Escreva uma mensagem (ex: "primeira versão do site")
+4. Clique em Commit changes
+
+### Ativar GitHub Pages
+1. Vá em Settings > Pages
+2. Em Source ou Deployment source:
+   - Branch: main
+   - Folder: /root
+3. Salve com Save
+4. Espere 1-2 minutos
+5. A URL vai aparecer no topo da página
+
+## FORMATO DO VÍDEO
+
+- Duração ideal: 6 a 10 segundos
+- Formato: MP4
+- Tamanho recomendado: até 5-10 MB
+
+## TROCAR NOMES DOS ARQUIVOS SE PrecisAR
+
+Se o seu vídeo tiver nome diferente:
+- Renomeie no computador para: transicao-solar.mp4
+- OU altere no código, onde diz:
+  <source src="assets/transicao-solar.mp4" type="video/mp4">
+
+----
+
+Pronto. Agora é só seguir os passos e seu site do SOLAR Museum estará no ar.

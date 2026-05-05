@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOLAR Museological Landing Page</title>
+  <style>
+    :root{--bg:#f2ece4;--text:#211d18;--muted:#6f665c;--line:rgba(33,29,24,.12);--accent:#71785f;--shadow:0 18px 48px rgba(34,26,18,.12);--radius:24px;--max:1200px}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.6} a{color:inherit;text-decoration:none} img,video{max-width:100%;display:block}
+    .container{width:min(calc(100% - 32px),var(--max));margin:0 auto}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(242,236,228,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .nav-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav a{margin-left:16px;color:var(--muted);font-size:.94rem}
+    .brand{display:flex;align-items:center;gap:12px}.mark{width:42px;height:42px;border-radius:999px;border:1px solid var(--line);display:grid;place-items:center;background:#fff}
+    .hero{position:relative;min-height:100vh;overflow:hidden;background:#000}
+    .hero video,.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+    .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,8,6,.18) 0%,rgba(10,8,6,.34) 48%,rgba(10,8,6,.78) 100%)}
+    .hero-content{position:relative;z-index:2;min-height:100vh;display:grid;align-items:end;padding:40px 0 44px;color:#fff}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:end}
+    h1,h2,h3{font-family:Georgia,serif;line-height:1.02;margin:0 0 16px} h1{font-size:clamp(3.4rem,10vw,7.4rem);max-width:8ch} h2{font-size:clamp(2rem,4vw,4rem)}
+    .eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:.76rem;color:#e8dbca;margin-bottom:12px}.lead{font-size:1.08rem;max-width:52ch;color:rgba(255,255,255,.88)}
+    .hero-card{padding:22px;border-radius:18px;background:rgba(25,20,16,.46);border:1px solid rgba(255,255,255,.12);backdrop-filter:blur(8px)}
+    .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{min-height:48px;padding:0 20px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-weight:700}.btn.primary{background:#fff;color:#161311}.btn.secondary{border:1px solid rgba(255,255,255,.25);color:#fff}
+    .section{padding:88px 0}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}.panel{background:rgba(255,255,255,.42);border:1px solid var(--line);border-radius:var(--radius);padding:32px;box-shadow:var(--shadow)}
+    .timeline{display:grid;gap:14px;margin-top:18px}.item{display:grid;grid-template-columns:92px 1fr;gap:14px;padding-top:14px;border-top:1px solid var(--line)}
+    .gallery{display:grid;grid-template-columns:1.1fr .9fr .9fr;gap:16px;margin-top:24px}.card{min-height:260px;border-radius:22px;overflow:hidden;position:relative;box-shadow:var(--shadow);background-size:cover;background-position:center}.card.tall{min-height:540px}.card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(0,0,0,.62))}.card span{position:absolute;left:18px;bottom:16px;z-index:1;color:#fff;font-weight:700}
+    .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}.mini{padding:24px;border-radius:20px;border:1px solid var(--line);background:rgba(255,255,255,.4);box-shadow:var(--shadow)}
+    .footer{padding:38px 0 56px;border-top:1px solid var(--line);color:var(--muted)}
+    @media (max-width:960px){.hero-grid,.grid2,.gallery,.cards3{grid-template-columns:1fr}.hero-content{padding:28px 0 34px}.section{padding:68px 0}.nav-inner{flex-direction:column;align-items:flex-start;padding:12px 0}}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand"><div class="mark">◈</div><strong>SOLAR</strong></div>
+      <nav><a href="#edificio">Edifício</a><a href="#historia">História</a><a href="#ambientes">Ambientes</a><a href="#galeria">Galeria</a><a href="#contato">Contato</a></nav>
+    </div>
+  </header>
+  <section class="hero">
+    <video autoplay muted loop playsinline poster="assets/poster-solar.jpg">
+      <source src="assets/transicao-solar.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Edifício histórico • Pelotas</div>
+          <h1>SOLAR</h1>
+          <p class="lead">Memória, arquitetura e presença em um edifício histórico. A capa começa do lado de fora e, ao rolar, o visitante entra no prédio como em uma experiência contínua.</p>
+          <div class="btns"><a class="btn primary" href="#edificio">Entrar no prédio</a><a class="btn secondary" href="#galeria">Explorar imagens</a></div>
+        </div>
+        <div class="hero-card"><strong style="display:block;margin-bottom:8px;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem">A capa</strong><p style="margin:0;color:rgba(255,255,255,.88)">Use o vídeo de transição como fundo, com a fachada no primeiro impacto e a entrada/interiores como sequência narrativa.</p></div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section class="section" id="edificio"><div class="container grid2"><div><div class="eyebrow">O edifício</div><h2>Um endereço de valor histórico</h2></div><div class="panel"><p>Rua General Osório, 725, no centro histórico de Pelotas.</p><p>O site deve passar a sensação de chegada: da rua para a fachada, da fachada para o interior, do interior para a memória.</p></div></div></section>
+    <section class="section" style="padding-top:0"><div class="container grid2"><div class="panel"><div class="eyebrow">História</div><h2>Uma narrativa inscrita na cidade</h2><div class="timeline"><div class="item"><strong>1876</strong><p>Construção do edifício.</p></div><div class="item"><strong>1998-2001</strong><p>Restauração do imóvel.</p></div><div class="item"><strong>Hoje</strong><p>Releitura contemporânea com valor patrimonial.</p></div></div></div><div class="panel"><h2 style="margin-top:0">"A experiência ideal mostra primeiro o prédio de fora e depois conduz o visitante para dentro."</h2><p>Esse é o efeito certo para um site museológico ou histórico com foco editorial.</p></div></div></section>
+    <section class="section" id="ambientes"><div class="container"><div class="grid2" style="margin-bottom:18px"><div><div class="eyebrow">Ambientes</div><h2>Do exterior ao interior</h2></div><div><p>A rolagem precisa parecer um percurso: fachada, entrada, corredores, salas, detalhes e áreas de convivência.</p></div></div><div class="cards3"><article class="mini"><h3>Entrada</h3><p>Primeiro plano depois da fachada.</p></article><article class="mini"><h3>Salas</h3><p>Os interiores precisam aparecer como continuidade natural.</p></article><article class="mini"><h3>Terraços</h3><p>Fechamento visual do percurso.</p></article></div></div></section>
+    <section class="section" id="galeria" style="padding-top:0"><div class="container"><div class="eyebrow">Galeria</div><h2>Sequência visual</h2><p>Troque as imagens pelos arquivos do SOLAR, mantendo a ordem: fora, entrada, dentro, detalhe, atmosfera.</p><div class="gallery"><div class="card tall" style="background-image:url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80')"><span>Fachada externa</span></div><div class="card" style="background-image:url('https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1000&q=80')"><span>Entrada / corredor</span></div><div class="card" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80')"><span>Interior</span></div><div class="card" style="background-image:url('https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1000&q=80')"><span>Detalhe</span></div><div class="card" style="background-image:url('https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1000&q=80')"><span>Atmosfera</span></div></div></div></section>
+    <section class="section" id="contato"><div class="container grid2"><div><div class="eyebrow">Contato</div><h2>Pronto para visita ou apresentação</h2></div><div class="panel"><p>WhatsApp: (53) 99101-3003<br>E-mail: zilberpar@terra.com</p><p>Se quiser, o próximo passo é transformar este template em uma versão já com seu logo, seu vídeo e suas imagens reais.</p></div></div></section>
+  </main>
+  <footer class="footer"><div class="container">Site completo com hero em vídeo, narrativa exterior → interior e estrutura pronta para o SOLAR.</div></footer>
+</body>
+</html>

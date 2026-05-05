@@ -1,0 +1,32 @@
+# Checklist antes de subir no GitHub
+
+## TÚMULOS QUE PRECISAM ESTAR PRONTOS
+
+- [ ] ter criado repositório no GitHub
+- [ ] ter o vídeo de transição salvo como:
+      `assets/transicao-solar.mp4`
+- [ ] ter imagem de poster salva como:
+      `assets/poster-solar.jpg`
+- [ ] ter as fotos do prédio (opcional)
+
+## COMO SUBIR
+
+1. GitHub > repos itório novo
+2. Add files > Upload files
+3. Arrastar сюда:
+      index.html
+      assets/transicao-solar.mp4
+      assets/poster-solar.jpg
+      fotos (opcional)
+4. Commit changes
+
+## PAGES
+
+1. Settings > Pages
+2. Branch: main
+3. Folder: /root
+4. Save
+
+## URL
+
+https://seunome.github.io/seurepo/
